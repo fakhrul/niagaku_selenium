@@ -1,0 +1,71 @@
+{
+  "id": "86325751-c9d0-4561-a9f8-6a582252a315",
+  "version": "2.0",
+  "name": "niagaku",
+  "url": "http://localhost:8080/pages/login",
+  "tests": [{
+    "id": "7bf2c4c3-fdb3-4c53-9c10-7b96b421967d",
+    "name": "Login",
+    "commands": [{
+      "id": "72fa2cc5-54fa-4db3-873b-523a2d7b5ad2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/pages/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19b5f9e0-1f8b-4d81-9e41-70d8cd86c7a6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@data-test-id=\"usernameInput\"]",
+      "targets": [
+        ["id=uid-z551yx5l6mp", "id"],
+        ["css=#uid-z551yx5l6mp", "css:finder"],
+        ["xpath=//input[@id='uid-z551yx5l6mp']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@niagaku.com"
+    }, {
+      "id": "b025e804-a41a-4603-ac8a-6d2fe81bdeee",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@data-test-id=\"passwordInput\"]",
+      "targets": [
+        ["id=uid-ou0kdz63emm", "id"],
+        ["css=#uid-ou0kdz63emm", "css:finder"],
+        ["xpath=//input[@id='uid-ou0kdz63emm']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "qwe123"
+    }, {
+      "id": "507cecc7-ea86-47fc-b6a8-0641769929e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4e1259-0f4f-42b5-bb6d-82b1d26d755a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c74f5a8-91db-4692-aabe-6deb8a32702d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://app.niaga-ku.com/", "http://localhost:8080/pages/login"],
+  "plugins": []
+}
